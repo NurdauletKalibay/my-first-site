@@ -1,0 +1,138 @@
+﻿body {
+   display: flex ;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   flex-direction:column;
+   background-color: #0e1538;
+}
+
+.hello {
+    display: block;
+
+    width: 600px;
+    height: 700px;
+}
+
+.hi {
+    color: aquamarine;
+   opacity: 1;
+    margin-left: -180px;
+}
+
+.button1{
+    width:200px;
+    height:50px;
+}
+
+a {
+    position: relative;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.5);
+    margin:40px;
+    transition:1s;
+    text-decoration: none;
+    overflow: hidden;
+    -wedkit-box-reflect: below 1px linear-gradient(transparent,transparent,#0004);
+}
+
+    a:hover {
+        background: var(--clr);
+        box-shadow: 0 0 10px var(--clr),
+            0 0 30px var(--clr),
+            0 0 60px var(--clr),
+            0 0 100px var(--clr);
+    }
+
+    a::before{
+        content: '';
+        position:absolute ;
+        height: 400%;
+        width:60px;
+        background: var(--clr);
+        transition:1s;
+        animation:animate 2s linear infinite;
+    }
+
+    a:hover::before
+    {
+        width:100%;
+    }
+
+    @keyframes animate
+    {
+        0%{
+            transform: rotate(0deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+    a::after
+    {
+        content: '';
+        position:absolute;
+        inset: 4px;
+        background: #0e1538;
+        transition: 0.5s;
+    }
+    a:hover::after{
+        background: var(--clr);
+    }
+
+    a span{
+        position:relative;
+        z-index: 1;
+        font-size: 2em;
+        color: #ffffff;
+        opacity: 0.5;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+
+    a:hover span {
+        opacity: 1;
+    }
+    /*this is a city style*/
+    .head{
+        display:inline-block;
+        text-align:center;
+        color:aqua;
+        width:600px;
+        height:150px;
+        margin:0;
+    }
+    hr {
+        width:90%;
+    }
+.tokyo {
+    display: block;
+    float: right;
+    width: 700px;
+    height: 700px;
+
+}
+ img{
+  width:600px;
+  height:300px;
+  float:left;
+  }
+  span{
+	  text-align:center;
+	  color:white;
+  }
+  
+
+
+  html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, dl, dt, dd,
+ol, ul, li, form, table, caption, tr, th, td, article, aside, footer, header{
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
