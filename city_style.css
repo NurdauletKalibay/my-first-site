@@ -95,3 +95,19 @@ li{
   margin-left: 50px;
   margin-top: 30px;
 }
+
+.card2 {
+  position: inherit;
+}
+@media (max-width: 800px) {
+  .content{
+    width:50%;
+  }
+
+}
+@media (max-width:800px) {
+  rek , rek1 {
+    width: 30%;
+    float: right;
+  }
+}
